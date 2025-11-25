@@ -36,6 +36,8 @@ connectDB();
 const allowedOrigins = [
     'http://localhost:3006', // Local development - admin
     'http://localhost:3009', // Local development - trangchu
+    'https://webshop.dantri24h.com',
+    'https://webshopadmin.dantri24h.com',
 ];
 
 app.use(cors({
