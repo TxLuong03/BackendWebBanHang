@@ -535,8 +535,7 @@ const createOrderThanhToanVNPay = async (req, res) => {
         // Lấy returnUrl từ frontend gửi lên, nếu không có thì sử dụng mặc định
         const returnUrl = req.body?.returnUrl || 'https://backendxuanluong.dantri24h.com/api/order/vnpay_return';
         // const returnUrl = req.body?.returnUrl || 'http://localhost:8088/api/order/vnpay_return';
-        console.log("newOrder._id.toString(): ", newOrder._id.toString());
-        
+        console.log("newOrder._id.toString(): ", newOrder._id.toString()); 
         // Tạo URL thanh toán
         const paymentUrl = vnpay.buildPaymentUrl({
             vnp_Amount: soTienCanThanhToan,
